@@ -1,0 +1,94 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    color: whitesmoke;
+    font-family: Karla;
+    max-width: 550px;
+    max-height: 550px;
+    background-size: contain;
+}
+
+.main-container {
+    background: #1F2937 no-repeat;
+    width: 550px;
+    height: 550px;
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+.header {
+    width: 354px;
+    height: 80px;
+    line-height: 40px;
+    size: 40px;
+    margin-top: 115px;
+    margin-left: 52px;
+}
+
+span {
+    color: #34D399;
+    display: block;
+}
+
+#slogan {
+    width: 372px;
+    height: 28px;
+    margin-left: 52px;
+    font-family: "Inter";
+    font-weight: 200px;
+    line-height: 28px;
+    size: 20px;
+}
+
+button {
+    width: 191px;
+    height: 42px;
+    margin-top: 40px;
+    margin-left: 52px;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    background: #34D399;
+    color: whitesmoke;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+hr {
+    margin: 40px auto;
+}
+
+.pswrdBox {
+    display: inline-flex;
+    width: 211px;
+    height: 39px;
+    border: none;
+    border-radius: 6px;
+    background: #273549;
+    margin-right: 24px;
+    
+}
+
+.container {
+    margin-left: 52px;
+}
+
+.password {
+    color: #55F991;
+    margin: auto;
+}
