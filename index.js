@@ -3,47 +3,44 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
  let passwordOneEl = document.getElementById("passwordOne-El")
  let passwordTwoEl = document.getElementById("passwordTwo-El")
-let passwordlength = 15
+
 
 
 function renderPassword() {
+
+    let passwordlength = document.getElementById("passwordLength-El").value
     
-//render password one
-
-function generateCharacters() {
-    let randomChar = Math.floor(Math.random() * characters.length)
-    return characters[randomChar]
-}
-
-function generatePassword() {
-    let randomPassword = ""
-    for (let i = 0; i < passwordlength; i++) {
-        randomPassword += generateCharacters()
+    //password one
+    
+    function generateRandomCharOne() {
+         let randomCharOne = Math.floor(Math.random() * characters.length)
+         return randomCharOne
+     }
+    function generatePasswordOne () {
+        let randomPasswordOne = " "
+        for (let i = 0; i < passwordlength; i++) {
+            randomPasswordOne += characters[generateRandomCharOne()]
+        }
+        return randomPasswordOne
     }
-    return randomPassword
-}
-
-passwordOneEl.textContent = generatePassword()
-
-//render password two
-
-function generateCharactersTwo() {
-    let randomChar = Math.floor(Math.random() * characters.length)
-    return characters[randomChar]
-}
-
-function generatePasswordTwo() {
-    let randomPasswordTwo = ""
-    for (let i = 0; i < passwordlength; i++) {
-        randomPasswordTwo += generateCharactersTwo()
+    passwordOneEl.textContent = generatePasswordOne()
+    
+    //password two
+    
+    function generateRandomCharTwo() {
+         let randomCharTwo = Math.floor(Math.random() * characters.length)
+         return randomCharTwo
+     }
+    function generatePasswordTwo () {
+        let randomPasswordTwo = " "
+        for (let i = 0; i < passwordlength; i++) {
+            randomPasswordTwo += characters[generateRandomCharTwo()]
+        }
+        return randomPasswordTwo
     }
-    return randomPasswordTwo
-}
-
-passwordTwoEl.textContent = generatePasswordTwo()
-
-}
-
+    passwordTwoEl.textContent = generatePasswordTwo()
+    
+    }
 
 
 
